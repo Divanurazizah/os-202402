@@ -1,17 +1,16 @@
-# 📝 Laporan Tugas Akhir
+# 📝 Laporan Tugas Akhir Modul 1: System Call dan Instrumentasi Kernel — xv6-public (x86)
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
 **Nama**: `<Diva Nur Azizah>`
 **NIM**: `<240202859>`
+**Kelas**: `<2IKRA>`
 **Modul yang Dikerjakan**:
 `(Modul 1 – System Call dan Instrumentasi Kernel)`
 
 ---
 
 ## 📌 Deskripsi Singkat Tugas
-
-Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
 
 * **Modul 1 – System Call dan Instrumentasi Kernel**:
   Menambahkan dua system call baru, yaitu `getpinfo()` untuk melihat proses yang aktif dan `getReadCount()` untuk menghitung jumlah pemanggilan `read()` sejak boot.
