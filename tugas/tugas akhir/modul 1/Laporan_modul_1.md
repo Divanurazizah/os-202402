@@ -33,8 +33,6 @@
 
 ## 📷 Hasil Uji
 
-<img width="1366" height="768" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/3bc0911a-b237-43cb-a2a1-44b40a6166d7" />
-
 
 ### 📍 Output `ptest`:
 
@@ -56,6 +54,9 @@ hello
 Read Count Setelah: 13
 
 ```
+
+<img width="1366" height="768" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/144db6e6-a202-4c55-ae09-1ea19086ed81" />
+
 
 ---
 
