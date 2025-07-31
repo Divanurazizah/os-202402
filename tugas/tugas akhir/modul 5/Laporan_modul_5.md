@@ -55,12 +55,9 @@ $ audit
 [1] PID=1 SYSCALL=15 TICK=4
 [2] PID=1 SYSCALL=17 TICK=4
 ...
-
 ```
 
-```
-
-<img width="1366" height="768" alt="Screenshot (97)" src="https://github.com/user-attachments/assets/b56bc732-d0f2-4cdb-bd13-934c8ab66f5d" />
+<img width="1366" height="768" alt="Screenshot (97)" src="https://github.com/user-attachments/assets/db6bde37-e3a4-449e-a372-6a5fd88d01cf" />
 
 ```
 
