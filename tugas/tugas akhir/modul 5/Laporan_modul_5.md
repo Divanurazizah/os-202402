@@ -63,9 +63,6 @@ $ audit
 
 
 
----
-
-
 ## ⚠️ Kendala yang Dihadapi
 
 * Awalnya semua proses bisa membaca log → perlu validasi PID di `sys_get_audit_log()`.
