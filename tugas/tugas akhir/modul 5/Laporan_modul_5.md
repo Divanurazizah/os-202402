@@ -57,17 +57,10 @@ $ audit
 
 <img width="1366" height="768" alt="Screenshot (97)" src="https://github.com/user-attachments/assets/e96bae4d-2f35-4894-a9ce-d74e94257f49" />
 
-
 ```
-
 ---
 
-
-
-
 ## ⚠️ Kendala yang Dihadapi
-
-Tuliskan kendala (jika ada), misalnya:
 
 * Awalnya semua proses bisa membaca log → perlu validasi PID di `sys_get_audit_log()`.
 * Saat buffer penuh `(audit_index >= MAX_AUDIT)`, log baru tidak tersimpan → harus disadari sebagai keterbatasan implementasi.
