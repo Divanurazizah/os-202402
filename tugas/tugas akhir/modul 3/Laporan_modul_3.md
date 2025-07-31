@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/0ff5e15c-e708-47a7-9cda-d04413ae4967" /># 📝 Laporan Tugas Akhir
+# 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
