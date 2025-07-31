@@ -38,7 +38,6 @@ Selain itu, juga menambahkan mekanisme kontrol akses agar hanya proses tertentu 
 
 ## ✅ Uji Fungsionalitas
 
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
 
 * `audit`: untuk menguji pembacaan audit log, memastikan proses biasa ditolak dan PID 1 dapat membaca log.
 
@@ -70,9 +69,9 @@ $ audit
 ## ⚠️ Kendala yang Dihadapi
 
 
-* Awalnya semua proses bisa membaca log → perlu validasi PID di sys_get_audit_log().
-* Saat buffer penuh (audit_index >= MAX_AUDIT), log baru tidak tersimpan → harus disadari sebagai keterbatasan implementasi.
-* Jika menjalankan audit langsung di shell, hasil selalu “Access denied” karena PID ≠ 1
+* Awalnya semua proses bisa membaca log → perlu validasi PID di `sys_get_audit_log()`.
+* Saat buffer penuh `(audit_index >= MAX_AUDIT)`, log baru tidak tersimpan → harus disadari sebagai keterbatasan implementasi.
+* Jika menjalankan `audit` langsung di shell, hasil selalu “Access denied” karena PID ≠ 1
 
 
 ---
