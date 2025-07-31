@@ -25,7 +25,7 @@ Merupakan device file yang dapat dibaca untuk mendapatkan byte acak, berfungsi s
 ## 🛠️ Rincian Implementasi
 
 1. System Call `chmod(path, mode)`
-Perubahan yang dilakukan meliputi:
+  Perubahan yang dilakukan meliputi:
 * `sysfile.c` → Menambahkan fungsi `sys_chmod()` untuk mengubah nilai `mode` pada inode.
 * `fs.c` → Memperbarui `writei()` agar menolak operasi tulis ketika file dalam keadaan hanya-baca.
 * `file.c` → Mengintegrasikan logika write-blocking dari `writei()` ke dalam `filewrite()`.
@@ -38,7 +38,7 @@ Perubahan yang dilakukan meliputi:
 * Makefile → Menambahkan `chmodtest` ke daftar program uji.
   
 2. Perangkat `/dev/random`
-Perubahan yang dilakukan:
+  Perubahan yang dilakukan:
 * `random.c` → Menyediakan fungsi `randomread()` yang mengembalikan byte acak.
 * `file.c` & `fs.c` → Mendaftarkan device baru ke dalam array `devsw[]` sehingga pembacaan `/dev/random` memanggil `randomread()`.
 * `sysfile.c` → Mendukung pembuatan perangkat ini melalui `mknod()`.
@@ -53,7 +53,7 @@ Makefile → Menambahkan `randomtest` ke daftar program uji.
 
 * `chmodtest` → Berhasil memblokir penulisan pada file yang sudah diubah menjadi read-only.
 * `randomtest` → Berhasil menghasilkan dan menampilkan byte acak dari `/dev/random`.
-* 
+  
 ---
 
 ## 📷 Hasil Uji
