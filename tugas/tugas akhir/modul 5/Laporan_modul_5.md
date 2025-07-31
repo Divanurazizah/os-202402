@@ -59,8 +59,8 @@ $ audit
 
 ```
 
-
 ## ⚠️ Kendala yang Dihadapi
+
 
 * Awalnya semua proses bisa membaca log → perlu validasi PID di `sys_get_audit_log()`.
 * Saat buffer penuh `(audit_index >= MAX_AUDIT)`, log baru tidak tersimpan → harus disadari sebagai keterbatasan implementasi.
@@ -71,7 +71,7 @@ $ audit
 
 ## 📚 Referensi
 
-Tuliskan sumber referensi yang Anda gunakan, misalnya:
+
 
 * Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
