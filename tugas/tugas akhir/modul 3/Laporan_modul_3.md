@@ -48,7 +48,7 @@ Program uji yang digunakan:
 
 <img width="1366" height="768" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/617c3adb-74a8-4d52-81bc-a8e9d3dce4e9" />
 
-### 📍 Contoh Output `cowtest`:
+### 📍 Output `cowtest`:
 
 ```
 Child sees: Y
@@ -57,7 +57,7 @@ Parent sees: X
 
 <img width="1366" height="768" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/2c6b55d0-7b72-4dba-9a6f-5977d8c24b2e" />
 
-### 📍 Contoh Output `shmtest`:
+### 📍 Output `shmtest`:
 
 ```
 Child reads: A
@@ -65,7 +65,6 @@ Parent reads: B
 ```
 
 ## ⚠️ Kendala yang Dihadapi
-
 
 
 * `cowuvm` awalnya tidak dikenali karena salah penempatan deklarasi (harus di `defs.h`).
@@ -83,6 +82,5 @@ Tuliskan sumber referensi yang Anda gunakan, misalnya:
 
 * Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Stack Overflow, GitHub Issues, diskusi praktikum
 
 ---
