@@ -62,7 +62,7 @@ Makefile → Menambahkan `randomtest` ke daftar program uji.
 
 ```
 $ randomtest
-47 1 47 1 47 1 47  1
+47 1 47 1 47 1 47 1
 ```
 
 ### 📍 Output `chmodtest`:
