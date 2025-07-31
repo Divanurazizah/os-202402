@@ -1,4 +1,4 @@
-# 📝 Laporan Tugas Akhir Modul 1: System Call dan Instrumentasi Kernel — xv6-public (x86)
+# 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
@@ -6,7 +6,7 @@
 **NIM**: `<240202859>`
 **Kelas**: `<2IKRA>`
 **Modul yang Dikerjakan**:
-`(Modul 1 – System Call dan Instrumentasi Kernel)`
+`(Modul 1 – System Call dan Instrumentasi Kernel — xv6-public (x86))`
 
 ---
 
@@ -18,10 +18,6 @@
 
 ## 🛠️ Rincian Implementasi
 
-Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
-
-### Contoh untuk Modul 1:
-
 * Menambahkan dua system call baru di file `sysproc.c` dan `syscall.c`
 * Mengedit `user.h`, `usys.S`, dan `syscall.h` untuk mendaftarkan syscall
 * Menambahkan struktur `struct pinfo` di `proc.h`
@@ -31,15 +27,8 @@ Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
 
 ## ✅ Uji Fungsionalitas
 
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
-
 * `ptest`: untuk menguji `getpinfo()`
 * `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
-
 ---
 
 ## 📷 Hasil Uji
@@ -47,41 +36,35 @@ Tuliskan program uji apa saja yang Anda gunakan, misalnya:
 <img width="1366" height="768" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/3bc0911a-b237-43cb-a2a1-44b40a6166d7" />
 
 
-### 📍 Contoh Output `cowtest`:
+### 📍 Output `ptest`:
 
 ```
-Child sees: Y
-Parent sees: X
-```
-
-### 📍 Contoh Output `shmtest`:
-
-```
-Child reads: A
-Parent reads: B
-```
-
-### 📍 Contoh Output `chmodtest`:
+$ ptest
+PID	MEM	NAME
+1	12288	init
+2	16384	  sh
+3	12288	ptest
 
 ```
-Write blocked as expected
-```
 
-Jika ada screenshot:
+### 📍 Output `rtest`:
 
 ```
-![hasil cowtest](./screenshots/cowtest_output.png)
+$ rtest
+Read Count Sebelum: 12
+hello
+Read Count Setelah: 13
+
 ```
 
 ---
 
 ## ⚠️ Kendala yang Dihadapi
 
-Tuliskan kendala (jika ada), misalnya:
-
-* Salah implementasi `page fault` menyebabkan panic
-* Salah memetakan alamat shared memory ke USERTOP
-* Proses biasa bisa akses audit log (belum ada validasi PID)
+* `readcount` tidak dikenali yang menyebabkan error undefined reference
+* Salah menambahkan field `priority` pada `struct proc` sehingga menyebabkan gagal kompilasi
+* Makefile error karena penggunaan spasi bukan tab
+* Output ptest tidak rapi karena proses mencetak secara bersamaan tanpa sinkronisasi
 
 ---
 
@@ -91,6 +74,5 @@ Tuliskan sumber referensi yang Anda gunakan, misalnya:
 
 * Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Stack Overflow, GitHub Issues, diskusi praktikum
 
 ---
