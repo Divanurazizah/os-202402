@@ -11,8 +11,6 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
-
 * **Modul 4 – Subsistem Kernel Alternatif (xv6-public)**:
   Modul ini dilakukan modifikasi terhadap kernel xv6 dengan menambahkan dua fitur utama:
 * System Call `chmod(path, mode)`
@@ -58,8 +56,6 @@ Makefile → Menambahkan `randomtest` ke daftar program uji.
 
 ## 📷 Hasil Uji
 
-<img width="1366" height="768" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/2cb66cae-fd90-49fc-9dec-073df0d5d31d" />
-
 
 ### 📍 Output `randomtest`:
 
@@ -74,6 +70,10 @@ $ randomtest
 $ chmodtest
 Write blocked as expected
 ```
+
+
+<img width="1366" height="768" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/40e53007-ac61-43eb-ae04-5555dcfd60b4" />
+
 
 ---
 
