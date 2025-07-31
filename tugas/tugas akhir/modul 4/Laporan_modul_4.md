@@ -49,6 +49,7 @@ Makefile → Menambahkan `randomtest` ke daftar program uji.
 
 ## ✅ Uji Fungsionalitas
 
+
 * `chmodtest` → Berhasil memblokir penulisan pada file yang sudah diubah menjadi read-only.
 * `randomtest` → Berhasil menghasilkan dan menampilkan byte acak dari `/dev/random`.
   
