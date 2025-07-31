@@ -16,7 +16,8 @@
 
 
   Pada modul ini saya mengimplementasikan dua fitur penting di xv6:
-Copy-on-Write Fork (CoW Fork) — optimisasi fork() agar tidak langsung menyalin seluruh memori proses, melainkan berbagi halaman memori secara read-only, lalu menyalin hanya saat ada penulisan (write).Shared Memory — menambahkan mekanisme shmget() dan shmrelease() untuk memungkinkan dua atau lebih proses berbagi segmen memori.
+* Copy-on-Write Fork (CoW Fork) — optimisasi fork() agar tidak langsung menyalin seluruh memori proses, melainkan berbagi halaman memori secara read-only, lalu menyalin hanya saat ada penulisan (write).
+* Shared Memory — menambahkan mekanisme shmget() dan shmrelease() untuk memungkinkan dua atau lebih proses berbagi segmen memori.
 Tujuan modul ini adalah mengoptimalkan kinerja proses fork dan menyediakan mekanisme berbagi data antar proses.
 ---
 
