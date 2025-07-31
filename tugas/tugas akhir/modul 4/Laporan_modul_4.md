@@ -58,6 +58,8 @@ Makefile → Menambahkan `randomtest` ke daftar program uji.
 
 ## 📷 Hasil Uji
 
+<img width="1366" height="768" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/2cb66cae-fd90-49fc-9dec-073df0d5d31d" />
+
 
 ### 📍 Output `randomtest`:
 
@@ -72,12 +74,6 @@ $ randomtest
 $ chmodtest
 Write blocked as expected
 ```
-
-```
-<img width="1366" height="768" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/4eef679f-a4fb-4b49-8909-e757557064d1" />
-
-```
-
 
 ---
 
